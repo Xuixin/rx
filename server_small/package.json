@@ -1,0 +1,23 @@
+{
+  "name": "server_small",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch index.ts",
+    "start": "bun run index.ts",
+    "seed": "bun run seed.ts",
+    "test": "chmod +x test-api.sh && ./test-api.sh"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.1.1",
+    "@elysiajs/swagger": "^1.3.1",
+    "elysia": "^1.4.9"
+  }
+}
